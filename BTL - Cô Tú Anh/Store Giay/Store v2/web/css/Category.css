@@ -1,0 +1,415 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : May 22, 2024, 11:35:48 AM
+    Author     : LE VIET TRUNG
+*/
+
+/* reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+}
+/* ----------------------------------------------header-------------------------------------- */
+#header {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  height: 60px;
+/*  background-color: rgba(225, 225, 225, 0.3);*/
+  background: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+#header:hover {
+  background-color: rgba(225, 225, 225, 1);
+}
+
+#logo img {
+  padding: 0 0 0 90px;
+  height: 100%;
+  width: auto;
+}
+
+#nav,
+#login,
+#search,
+#footer-top,
+#footer-bottom,
+.subnav {
+  list-style-type: none;
+}
+
+#nav > li {
+  display: inline-block;
+  position: relative;
+}
+
+#nav > li > a {
+  color: #000;
+  text-transform: uppercase;
+}
+
+#nav li a {
+  text-decoration: none;
+  line-height: 60px;
+  padding: 0 24px;
+  display: inline-block;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav li:hover .subnav a {
+  width: 100%;
+}
+
+#nav > li:hover > a {
+  color: black;
+  background-color: #ccc;
+}
+
+#nav .subnav {
+  display: none;
+  min-width: 131px;
+  position: absolute;
+  background-color: #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+  color: #000;
+  padding: 0 16px;
+  line-height: 38px;
+}
+
+#nav .subnav li:hover {
+  color: #fff;
+  background-color: #fff;
+}
+
+#search {
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 24px;
+}
+
+.btn-search {
+    background-color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+/*    margin-top: 10px;*/
+/*    display: flex;*/
+}
+
+#search > li input {
+  flex: 1;
+  outline: none;
+  width: 500px;
+  padding-left: 10px;
+}
+
+#search > li:first-child input {
+  border: none;
+  border-bottom: 2px solid #333;
+  min-height: 30px;
+  margin: 0 10px;
+  background: transparent;
+}
+#login li {
+  display: inline-block;
+  position: relative;
+}
+
+#login li i {
+  margin: 15px;
+}
+
+#login li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 70%;
+  background: #333;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* --------------Bỏ sọc cuối-------------------- */
+#login li:last-child::after {
+  display: none;
+}
+
+#login li a {
+  color: #000;
+  text-decoration: none;
+  line-height: 60px;
+  padding: 0 24px;
+  display: inline-block;
+}
+
+#login > a {
+  color: #000;
+  margin-right: 30px;
+  font-size: 20px;
+  position: relative;
+  padding: 0 24px;
+}
+#login a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 70%;
+  background: #333;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#login a:last-child:after {
+  display: none;
+}
+
+#login li:hover {
+  background-color: #ccc;
+}
+
+#login li:hover a {
+  color: black;
+}
+
+/* ----------------------------------footer------------------------------ */
+
+#footer-top {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  height: 70px;
+  padding-top: 30px;
+  border-top: 2px solid #000;
+}
+
+#footer-top img {
+  height: 60px;
+}
+
+#footer-top li {
+  padding: 0 15px;
+  position: relative;
+}
+
+#footer-top li::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 80%;
+  background: #ccc;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* ----Bỏ sọc cuối---- */
+#footer-top li:last-child::after {
+  display: none;
+}
+
+#footer-top li:last-child a {
+  margin-right: 12px;
+}
+
+#footer-center p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#footer-bottom {
+  text-align: center;
+  padding: 12px 0;
+}
+
+#footer-center p .email {
+  margin-left: 70px;
+}
+
+.footer {
+  background-color: antiquewhite;
+}
+/* --------------------------------------------------------category--------------------------------------- */
+.category {
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.row {
+  display: flex;
+}
+
+.category-top {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.category-top p {
+  margin: 0 12px;
+  font-size: 12px;
+  color: #ccc;
+}
+
+.category-top span {
+  color: #ccc;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*------- Chia trang thành 2 phần. Phần menu chiếm 20%, phầm container chiếm 80% -------*/
+.category-left {
+  width: 20%;
+}
+
+.category-right {
+  width: 80%;
+  margin-right: 100px;
+  flex-wrap: wrap;
+}
+
+/* -------------------------CSS cho phần nav-menu (left) -----------------------------------*/
+a {
+  text-decoration: none;
+}
+.category-left ul li {
+  padding: 12px 0;
+}
+
+.category-left ul li a {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.category-left ul li ul li {
+  padding-left: 12px;
+}
+
+.category-left ul li ul li a {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.subnav-menu > li > a {
+  cursor: default;
+}
+.subnav-menu > li:hover > a {
+  color: grey;
+}
+
+.subnav-menu .subnav-menu-item {
+  display: none;
+}
+
+.subnav-menu-item li:hover a {
+  color: #ccc;
+}
+
+.subnav-menu li:hover .subnav-menu-item {
+  display: block;
+}
+
+/*--------------------------- CSS cho phầm container (right)----------------------------*/
+.category-right-top-item:first-child {
+  font-size: 16px;
+  font-weight: bold;
+  flex: 2;
+}
+
+.category-right-top-item {
+  flex: 1;
+  padding: 0 12px;
+}
+
+.category-right-top-item button {
+  width: 100%;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.category-right-top-item select {
+  width: 100%;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.category-right-content {
+  margin-top: 20px;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+.category-right-content-item {
+  width: calc(25% - 10px);
+  padding: 12px 0;
+  margin-right: 10px;
+  margin-bottom: 50px;
+}
+
+.category-right-content-item img {
+  width: 100%;
+  height: auto;
+}
+
+.category-right-content-item h1 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.category-right-content-item h4 {
+  font-size: 12px;
+  font-weight: 100;
+  color: slategray;
+}
+
+.category-right-bottom {
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.category-right-bottom-item > p > span i {
+  font-size: 10px;
+}
+
+.category-right-bottom-item p {
+  font-size: 13px;
+}

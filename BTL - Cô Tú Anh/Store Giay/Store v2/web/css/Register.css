@@ -1,0 +1,131 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Apr 13, 2024, 2:09:52 AM
+    Author     : LE VIET TRUNG
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("/Store/img/Home/login.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  /* background: yellow; */
+  backdrop-filter: blur(40px);
+  width: 420px;
+  padding: 30px 40px;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #ccc;
+}
+
+.wrapper h4 {
+  font-size: 16px;
+  text-align: center;
+  margin: 20px;
+}
+
+.wrapper .input-box {
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  padding: 20px 45px 20px 20px;
+  border-radius: 40px;
+  background: transparent;
+  color: #fff;
+}
+
+.input-box input::placeholder {
+  color: #ccc;
+}
+
+.wrapper .btn {
+  width: 100%;
+  height: 45px;
+  font-size: 16px;
+  background: #fff;
+  border: 0;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.wrapper .login-link {
+  font-size: 14.5px;
+  text-align: center;
+  color: #fff;
+  margin: 20px 0 15px;
+}
+
+.login-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-link p a:hover {
+  text-decoration: underline;
+}
+
+.wrapper .connect {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  height: 30px;
+  align-items: center;
+}
+
+.wrapper .connect a {
+  width: 40%;
+  display: flex;
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.wrapper .connect a i {
+  font-size: 28px;
+  margin: 3px;
+  color: blue;
+}
+
+.wrapper .connect a p {
+  margin-top: 10px;
+  margin-left: 5%;
+  font-weight: 500;
+}

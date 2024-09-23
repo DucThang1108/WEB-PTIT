@@ -1,0 +1,165 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Apr 12, 2024, 10:42:53 PM
+    Author     : LE VIET TRUNG
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("/Store/img/Home/login.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(50px);
+  /* background-color: burlywood; */
+  color: #fff;
+  border-radius: 12px;
+  padding: 30px 40px;
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #ccc;
+}
+
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: #ccc;
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 35%;
+  transform: translate(-50%);
+  font-size: 16px;
+}
+
+.input-box .eye {
+  cursor: pointer;
+}
+
+.wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 3px;
+}
+
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: 0;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.wrapper .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+.wrapper .connect {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  height: 30px;
+  align-items: center;
+}
+
+.wrapper .connect a {
+  width: 40%;
+  display: flex;
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+/* .wrapper .connect a:hover {
+  text-decoration: underline;
+} */
+
+.wrapper .connect a i {
+  font-size: 28px;
+  margin: 3px;
+  color: blue;
+}
+
+.wrapper .connect a p {
+  margin-top: 10px;
+  margin-left: 5%;
+  font-weight: 500;
+}
